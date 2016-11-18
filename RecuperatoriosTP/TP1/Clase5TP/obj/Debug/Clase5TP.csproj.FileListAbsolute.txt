@@ -1,0 +1,14 @@
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.Form1.resources
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.Properties.Resources.resources
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.csproj.GenerateResource.Cache
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\bin\Debug\Clase5TP.exe
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\bin\Debug\Clase5TP.pdb
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.exe
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.pdb
+F:\!PROGRAMACION II 2016\Clase5TP\Clase5TP\obj\Debug\Clase5TP.csprojResolveAssemblyReference.cache
+C:\Users\Commodore\Documents\GitHub\TrabajoPracticoCalculadora\Clase5TP\Clase5TP\obj\Debug\Clase5TP.exe
+C:\Users\Commodore\Documents\GitHub\TrabajoPracticoCalculadora\Clase5TP\Clase5TP\obj\Debug\Clase5TP.pdb
+C:\Users\Commodore\Desktop\Nueva carpeta\Clase5TP\obj\Debug\Clase5TP.exe
+C:\Users\Commodore\Desktop\Nueva carpeta\Clase5TP\obj\Debug\Clase5TP.pdb
+C:\Users\Commodore\Documents\GitHub\tp_laboratorio_2\RecuperatoriosTP\TP1\Clase5TP\obj\Debug\Clase5TP.exe
+C:\Users\Commodore\Documents\GitHub\tp_laboratorio_2\RecuperatoriosTP\TP1\Clase5TP\obj\Debug\Clase5TP.pdb
