@@ -1,0 +1,5 @@
+F:\!\Suppan.Mauro.TP3\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+F:\!\Suppan.Mauro.TP3\Excepciones\bin\Debug\Excepciones.exe
+F:\!\Suppan.Mauro.TP3\Excepciones\bin\Debug\Excepciones.pdb
+F:\!\Suppan.Mauro.TP3\Excepciones\obj\Debug\Excepciones.exe
+F:\!\Suppan.Mauro.TP3\Excepciones\obj\Debug\Excepciones.pdb
