@@ -1,7 +1,0 @@
-F:\!\Suppan.Mauro.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
-F:\!\Suppan.Mauro.TP3\Archivos\bin\Debug\Archivos.exe
-F:\!\Suppan.Mauro.TP3\Archivos\bin\Debug\Archivos.pdb
-F:\!\Suppan.Mauro.TP3\Archivos\bin\Debug\Excepciones.exe
-F:\!\Suppan.Mauro.TP3\Archivos\bin\Debug\Excepciones.pdb
-F:\!\Suppan.Mauro.TP3\Archivos\obj\Debug\Archivos.exe
-F:\!\Suppan.Mauro.TP3\Archivos\obj\Debug\Archivos.pdb

@@ -1,2 +1,0 @@
-F:\!\Suppan.Mauro.TP3\TP\bin\Debug\TP.exe.config
-F:\!\Suppan.Mauro.TP3\TP\obj\Debug\TP.csprojResolveAssemblyReference.cache

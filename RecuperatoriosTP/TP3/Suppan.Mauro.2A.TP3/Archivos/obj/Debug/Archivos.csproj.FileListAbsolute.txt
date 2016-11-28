@@ -1,0 +1,7 @@
+F:\Suppan.Mauro.2A.TP3\Archivos\bin\Debug\Archivos.dll
+F:\Suppan.Mauro.2A.TP3\Archivos\bin\Debug\Archivos.pdb
+F:\Suppan.Mauro.2A.TP3\Archivos\bin\Debug\Excepciones.dll
+F:\Suppan.Mauro.2A.TP3\Archivos\bin\Debug\Excepciones.pdb
+F:\Suppan.Mauro.2A.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+F:\Suppan.Mauro.2A.TP3\Archivos\obj\Debug\Archivos.dll
+F:\Suppan.Mauro.2A.TP3\Archivos\obj\Debug\Archivos.pdb

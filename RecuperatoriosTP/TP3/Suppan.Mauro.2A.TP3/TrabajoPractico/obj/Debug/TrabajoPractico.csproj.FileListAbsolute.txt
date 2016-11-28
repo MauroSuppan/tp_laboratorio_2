@@ -1,0 +1,17 @@
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\TrabajoPractico.exe.config
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\obj\Debug\TrabajoPractico.csprojResolveAssemblyReference.cache
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\TrabajoPractico.exe
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\TrabajoPractico.pdb
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\Archivos.dll
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\EntidadesAbstractas.dll
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\EntidadesInstanciables.dll
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\Excepciones.dll
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\Archivos.pdb
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\EntidadesAbstractas.pdb
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\EntidadesInstanciables.pdb
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\Excepciones.pdb
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\obj\Debug\TrabajoPractico.exe
+F:\Suppan.Mauro.2A.TP3\TrabajoPractico\obj\Debug\TrabajoPractico.pdb
+C:\Users\Commodore\Documents\GitHub\tp_laboratorio_2\RecuperatoriosTP\TP3\Suppan.Mauro.2A.TP3\TrabajoPractico\bin\Debug\TrabajoPractico.exe.config
+C:\Users\Commodore\Documents\GitHub\tp_laboratorio_2\RecuperatoriosTP\TP3\Suppan.Mauro.2A.TP3\TrabajoPractico\obj\Debug\TrabajoPractico.exe
+C:\Users\Commodore\Documents\GitHub\tp_laboratorio_2\RecuperatoriosTP\TP3\Suppan.Mauro.2A.TP3\TrabajoPractico\obj\Debug\TrabajoPractico.pdb

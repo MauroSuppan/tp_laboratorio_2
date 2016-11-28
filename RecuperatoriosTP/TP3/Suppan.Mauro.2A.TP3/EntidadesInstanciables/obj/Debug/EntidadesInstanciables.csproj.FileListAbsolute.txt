@@ -1,0 +1,11 @@
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\obj\Debug\EntidadesInstanciables.csprojResolveAssemblyReference.cache
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\EntidadesInstanciables.dll
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\EntidadesInstanciables.pdb
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\Archivos.dll
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\EntidadesAbstractas.dll
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\Excepciones.dll
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\Archivos.pdb
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\EntidadesAbstractas.pdb
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\bin\Debug\Excepciones.pdb
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\obj\Debug\EntidadesInstanciables.dll
+F:\Suppan.Mauro.2A.TP3\EntidadesInstanciables\obj\Debug\EntidadesInstanciables.pdb
