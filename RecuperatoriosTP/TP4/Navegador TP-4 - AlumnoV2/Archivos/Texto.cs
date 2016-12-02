@@ -1,44 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
-        private string filePath;
-
-
-        public Texto(string archivo)
+        string ruta;
+        
+        /// <summary>
+        /// Asigana la ruta del archivo.
+        /// </summary>
+        /// <param name="ruta"></param>
+        public Texto(string ruta)
         {
-            this.filePath = archivo;
+            this.ruta = ruta;
         }
 
+        /// <summary>
+        /// Guarda los datos pasados por parametro en un archivo de texto.
+        /// </summary>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool guardar(string datos)
         {
-            using (StreamWriter file = new StreamWriter(this.filePath, true))
-            {
-                file.WriteLine(datos);
-            }
-            return true;
-        }
+            bool succed = false;
 
-        public bool leer(out List<string> lines)
-        {
-            lines = new List<string>();
-
-            using (StreamReader file = new StreamReader(this.filePath))
+            try
             {
-                while (!file.EndOfStream)
+                using (StreamWriter sw = new StreamWriter(ruta,true))
                 {
-                    lines.Add(file.ReadLine());
+                    sw.WriteLine(datos);
+                    succed = true;
                 }
             }
+            catch (Exception e)
+            {
+                succed = false;
+                throw e;
+            }
 
-            return true;
+            return succed;
+        }
+
+        /// <summary>
+        /// Lee los datos y los guarda en una lista generica de string.
+        /// </summary>
+        /// <param name="datos"></param>
+        /// <returns></returns>
+        public bool leer(out List<string> datos)
+        {
+            bool succed = false;
+            datos = new List<string>();
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(ruta))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        datos.Add(sr.ReadLine());
+                    }
+
+                    succed = true;
+                }
+            }
+            catch (Exception)
+            {
+                succed = false;
+                datos = default(List<string>);
+            }
+
+            return succed;
         }
     }
 }

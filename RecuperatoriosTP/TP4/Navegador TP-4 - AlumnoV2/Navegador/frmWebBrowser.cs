@@ -90,49 +90,41 @@ namespace Navegador
             }
         }
 
+        /// <summary>
+        /// Muestra el historial de paginas que se descargo su codigo.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void historialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHistorial historial = new Navegador.frmHistorial();
-            historial.ShowDialog();
+            frmHistorial historial = new frmHistorial();
+            historial.Show();
         }
 
+        /// <summary>
+        /// Descarga el codigo html de la pagina solicitada y lo guarda en archivo de texto.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnIr_Click(object sender, EventArgs e)
         {
-            this.tspbProgreso.Value = 0;
-
-            if (!this.txtUrl.Text.Contains("http://"))
-            {
-                this.txtUrl.Text = this.txtUrl.Text.Insert(0, "http://");
-            }
-
             try
             {
-               
-                Uri unUri = new Uri(this.txtUrl.Text, UriKind.Absolute);
+                Uri direccion = new UriBuilder(this.txtUrl.Text).Uri;
+                Descargador cliente = new Descargador(direccion);
 
-                Descargador unDescargador = new Descargador(unUri);
-                unDescargador.eventProgress += new Descargador.EventProgress(this.ProgresoDescarga);
-                unDescargador.eventCompleted += new Descargador.EventCompleted(this.FinDescarga);
+                archivos.guardar(direccion.ToString());
 
-                Thread hilo = new Thread(new ThreadStart(unDescargador.IniciarDescarga));
+                cliente.ProgresoDescarga += this.ProgresoDescarga;
+                cliente.DescargaFinalizada += this.FinDescarga;
 
-                hilo.Start();
+                Thread T = new Thread(new ThreadStart(cliente.IniciarDescarga));
+                T.Start();
             }
-            catch (Exception exc)
+            catch (Exception)
             {
-                MessageBox.Show(exc.Message, "ERROR");
-            }
-            finally
-            {              
-                this.archivos.guardar(this.txtUrl.Text);
+                
             }
         }
-
-        private void txtUrl_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

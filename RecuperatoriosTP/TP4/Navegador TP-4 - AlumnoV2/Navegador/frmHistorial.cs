@@ -19,25 +19,35 @@ namespace Navegador
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Carga el formularion con las url de la paginas visitadas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmHistorial_Load(object sender, EventArgs e)
         {
             Archivos.Texto archivos = new Archivos.Texto(frmHistorial.ARCHIVO_HISTORIAL);
             List<string> historial;
 
-            if (archivos.leer(out historial))
+            try
             {
-                lstHistorial.DataSource = historial;
+                if (archivos.leer(out historial))
+                {
+                    foreach (String item in historial)
+                    {
+                        this.lstHistorial.Items.Add(item);
+                    }
+                }
             }
-            else
-            {            
-                MessageBox.Show("Error al leer el historial.", "ERROR");
+            catch (Exception)
+            {
+                throw;
             }
-            
         }
 
         private void lstHistorial_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

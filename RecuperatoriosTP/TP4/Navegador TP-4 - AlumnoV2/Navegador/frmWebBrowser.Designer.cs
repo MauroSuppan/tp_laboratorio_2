@@ -75,7 +75,6 @@
             this.txtUrl.Size = new System.Drawing.Size(852, 20);
             this.txtUrl.TabIndex = 2;
             this.txtUrl.Tag = "Introduzca la dirección web";
-            this.txtUrl.TextChanged += new System.EventHandler(this.txtUrl_TextChanged);
             this.txtUrl.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUrl_KeyDown);
             this.txtUrl.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUrl_KeyUp);
             this.txtUrl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtUrl_MouseDown);

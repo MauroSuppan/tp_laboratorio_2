@@ -14,14 +14,8 @@ namespace Hilo
         private string html;
         private Uri direccion;
 
-        public delegate void EventProgress(int status);
-        public event EventProgress eventProgress;
-        public delegate void EventCompleted(string web);
-        public event EventCompleted eventCompleted;
-
         public Descargador(Uri direccion)
         {
-            this.html = "";
             this.direccion = direccion;
         }
 
@@ -30,8 +24,8 @@ namespace Hilo
             try
             {
                 WebClient cliente = new WebClient();
-                cliente.DownloadProgressChanged += WebClientDownloadProgressChanged ;
-                cliente.DownloadStringCompleted += WebClientDownloadCompleted  ;
+                cliente.DownloadProgressChanged += WebClientDownloadProgressChanged;
+                cliente.DownloadStringCompleted += WebClientDownloadCompleted;
 
                 cliente.DownloadStringAsync(this.direccion);
             }
@@ -41,25 +35,34 @@ namespace Hilo
             }
         }
 
+        public delegate void FinDescargaEventHandler(string html);
+        public event FinDescargaEventHandler DescargaFinalizada;
+
         private void WebClientDownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            this.eventProgress(e.ProgressPercentage);
+            if (ProgresoDescarga != null)
+                ProgresoDescarga(e.ProgressPercentage);
         }
+
+        public delegate void ProgresoDescargaEventHandler(int progreso);
+        public event ProgresoDescargaEventHandler ProgresoDescarga;
+
         private void WebClientDownloadCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             try
             {
+
                 this.html = e.Result;
             }
-
-            catch (Exception excep)
+            catch (Exception ex)
             {
-                this.html = excep.InnerException.Message;
-            }
 
+                this.html = ex.InnerException.Message;
+            }
             finally
             {
-                this.eventCompleted(this.direccion.ToString());
+                
+                this.DescargaFinalizada(this.html);
             }
         }
     }
